@@ -1,4 +1,5 @@
-using UnityEngine;
+/*using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RestartGame : MonoBehaviour
 {
@@ -6,5 +7,17 @@ public class RestartGame : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
         Time.timeScale = 1; 
+    }
+}*/
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class RestartGame : MonoBehaviour
+{
+    public void LoadCurrentScene()
+    {
+        Time.timeScale = 1f; // oyunu tekrar başlatırken zamanı düzelt
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // bulunduğun sahneyi yeniden yükle
     }
 }
