@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Damage
   - CoinText
+  - Health
   layers:
   - Default
   - TransparentFX
